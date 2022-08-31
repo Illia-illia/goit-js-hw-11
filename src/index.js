@@ -24,7 +24,7 @@ function onAddImage() {
 
   onRequestSerchFetch(request, page, perPage)
     .then(({ data }) => {
-      hasImage = Math.ceil(data.totalHits / perPage);
+      let hasImage = Math.ceil(data.totalHits / perPage);
       if (page > hasImage) {
         addBtnEl.classList.add('visually-hidden');
         infoEnd.classList.remove('visually-hidden');
