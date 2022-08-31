@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page title</title>
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <link rel="stylesheet" href="./css/gallery.css" />
+  </head>
+  <body>
+    <div class="input-wrap">
+    <form class="search-form" id="search-form">
+      <input
+        type="text"
+        name="searchQuery"
+        autocomplete="off"
+        placeholder="Search images..."
+      />
+      <button class="btn" type="submit">Search</button>
+      </div>
+      <ul class="gallery">
+        <!-- Картки зображень -->
+        
+      </ul>
+      <div class="info-end visually-hidden"><p >We're sorry, but you've reached the end of search results.</p></div>
+      <button type="button" class="load-more btn visually-hidden">Load more</button>
+    </form>
+    
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
